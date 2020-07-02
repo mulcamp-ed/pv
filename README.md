@@ -1,6 +1,6 @@
 # Who's Next? 제비뽑기
 
-Deploy : 
+Deploy : [edvue.netlify.app](https://edvue.netlify.app)
 
 ## 사용방법
 
