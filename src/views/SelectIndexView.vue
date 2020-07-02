@@ -4,7 +4,7 @@
     
     <div class="d-flex">
       <SelectAdd class="w-50 p-3 box-line" @add-name="addName" />
-      <SelectChoice class="w-50 p-3 box-line" @select-name="selectName" :maxSize="computedMax" />
+      <SelectChoice class="w-50 p-3 box-line" @select-name="selectName" :maxValue="computedMax" />
     </div>
 
     <SelectList class="my-3 box-line" :dataList="dataList" :selectedList="selectedList"
