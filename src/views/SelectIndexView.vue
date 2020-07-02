@@ -62,7 +62,7 @@ export default {
       if (number > this.computedMax){
         number = this.computedMax
       }
-      this.resetSelected(this.selectedList) // 기존에 선택 된 것을 초기화 (색을 원래대로)
+      this.resetSelected(this.selectedList) // 기존에 선택 된 것을 초기화 (카드색 원래대로)
 
       this.selectedList = _.sampleSize(this.nameList, number)
       this.setSelected(this.selectedList)
