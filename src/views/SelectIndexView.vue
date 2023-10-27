@@ -60,7 +60,7 @@ export default {
 
     selectName(values) {
       let number = values[0]
-      console.log(values[1])
+      console.log(values)
       if (number > this.computedMax){
         number = this.computedMax
       }

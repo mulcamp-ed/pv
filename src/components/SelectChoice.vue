@@ -23,10 +23,10 @@ export default {
       const pic = document.querySelector('#pick')
       pic.addEventListener('keydown', function (e) {
         if (!f && e.code === "ControlLeft"){
-          this.$emit('select-name', [this.inputNumber, true])
+          f = true
         }
       })
-      this.$emit('select-name', [this.inputNumber, false])
+      this.$emit('select-name', [this.inputNumber, f])
     }
   }, // end methods
 }
