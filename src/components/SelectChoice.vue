@@ -19,11 +19,14 @@ export default {
   }, // end props
   methods: {
     selectName() {
+      const f = false
       const pic = document.querySelector('#pick')
       pic.addEventListener('keydown', function (e) {
-        console.log(e.code)
+        if (e.code === "ControlLeft"){
+          f = true
+        }
       })
-      this.$emit('select-name', this.inputNumber)
+      this.$emit('select-name', [this.inputNumber, f])
     }
   }, // end methods
 }

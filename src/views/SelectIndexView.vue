@@ -58,7 +58,9 @@ export default {
       })
     },
 
-    selectName(number) {
+    selectName(values) {
+      number = values[0]
+      console.log(values[1])
       if (number > this.computedMax){
         number = this.computedMax
       }
