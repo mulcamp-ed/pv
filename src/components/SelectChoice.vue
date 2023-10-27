@@ -20,10 +20,12 @@ export default {
   methods: {
     selectName() {
       let f = false
+      let that = this
       const pic = document.querySelector('#pick')
       pic.addEventListener('keydown', function (e) {
         if (!f && e.code === "ControlLeft"){
           f = true
+          that.$emit('select-name', [that.inputNumber, f])
         }
       })
       this.$emit('select-name', [this.inputNumber, f])
