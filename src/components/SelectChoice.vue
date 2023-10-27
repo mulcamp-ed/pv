@@ -22,7 +22,7 @@ export default {
       const f = false
       const pic = document.querySelector('#pick')
       pic.addEventListener('keydown', function (e) {
-        if (e.code === "ControlLeft"){
+        if (!f && e.code === "ControlLeft"){
           f = true
         }
       })
