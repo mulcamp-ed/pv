@@ -19,7 +19,7 @@ export default {
   }, // end props
   methods: {
     selectName() {
-      const f = false
+      let f = false
       const pic = document.querySelector('#pick')
       pic.addEventListener('keydown', function (e) {
         if (!f && e.code === "ControlLeft"){
