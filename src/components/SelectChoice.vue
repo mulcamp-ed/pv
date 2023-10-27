@@ -24,6 +24,7 @@ export default {
       pic.addEventListener('keydown', function (e) {
         if (!f && e.code === "ControlLeft"){
           f = true
+          console.log(f)
         }
       })
       this.$emit('select-name', [this.inputNumber, f])
