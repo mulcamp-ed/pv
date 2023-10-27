@@ -2,7 +2,7 @@
   <div>
     <label class="display-4" for="input-number">몇 명?</label><br>
     <input class="form-control" type="number" id="input-number" v-model="inputNumber" min="1" :max="maxValue">
-    <button class="btn btn-success btn-lg mt-3" @click="selectName">뽑기</button>
+    <button class="btn btn-success btn-lg mt-3" id="pick" @click="selectName">뽑기</button>
   </div>
 </template>
 
@@ -19,6 +19,10 @@ export default {
   }, // end props
   methods: {
     selectName() {
+      const pic = document.querySelector('#pick')
+      pic.addEventListener('keydown', function (e) {
+        console.log(e.code)
+      })
       this.$emit('select-name', this.inputNumber)
     }
   }, // end methods
