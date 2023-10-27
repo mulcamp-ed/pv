@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>누가 소리를 내었는가?</h1>
+    <h1>누가 소리를 내었는가??</h1>
     
     <div class="d-flex">
       <SelectAdd class="w-50 p-3 box-line" @add-name="addName" />
